@@ -16,4 +16,4 @@ build/
 /app/vendor/
 mysql
 .DS_Store
-/app/var
+/app/var/
