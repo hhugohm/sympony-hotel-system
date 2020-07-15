@@ -1,0 +1,58 @@
+https://medium.com/@ger86/como-integrar-docker-en-un-proyecto-basado-en-symfony-846a4ee0f329
+
+
+https://getcomposer.org/doc/03-cli.md#clear-cache-clearcache-cc
+https://medium.com/@c.harrison/speedy-composer-installs-in-docker-builds-41eea6d0172b
+https://www.sentinelstand.com/article/composer-install-in-dockerfile-without-breaking-cache
+
+http://www.inanzzz.com/index.php/post/k4r7/using-docker-multi-stage-builds-to-run-composer-install-and-copy-application-into-php-container-image
+
+
+https://bitbucket.org/juanwilde/sf5-expenses-api/src/725452f8fdc98b54773ea9b141eea6ed61be5838/docker/php/Dockerfile?at=section2%2Fvideo1-docker-config
+
+
+
+composer require symfony/orm-pack
+composer require --dev symfony/make-bundle
+
+
+
+
+php bin/console make:entity
+make:entityHote
+
+ created: src/Entity/Hotel.php
+ created: src/Repository/HotelRepository.php
+
+name
+string
+255
+--
+tag
+string
+255
+--
+description
+text
+--
+priece
+float
+
+
+
+---
+$ docker exec -it  neosunivesity-symfony-test_php_1 bash
+$ php bin/console make:migration
+
+ Next: Review the new migration "src/Migrations/Version20200713223802.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+
+ $ php bin/console doctrine:migrations:migrate
+
+
+
+ Package zendframework/zend-eventmanager is abandoned, you should avoid using it. Use laminas/laminas-eventmanager instead.
+Package zendframework/zend-code is abandoned, you should avoid using it. Use laminas/laminas-code instead.
+
+
+
