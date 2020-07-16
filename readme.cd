@@ -1,4 +1,6 @@
+--------------------------
 Steps tu run the project:
+--------------------------
 - clone the repository
 1 - execute Docker command:
 $ docker-compose build
