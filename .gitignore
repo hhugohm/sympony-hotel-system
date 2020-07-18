@@ -12,7 +12,6 @@
 /var/sessions/*
 !var/sessions/.gitkeep
 app/bootstrap.php.cache
-build/
 /app/vendor/
 mysql
 .DS_Store
