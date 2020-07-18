@@ -1,3 +1,22 @@
+--------------------------
+Steps by run the project:
+--------------------------
+- clone the repository
+1 - execute Docker command:
+$ docker-compose build
+2 - execute Docker command:
+$ docker-compose up
+3 - when the all containers are done, please in another command line windowd execute:
+$ docker exec -it symfony_php  bash
+4 - After that you must execute composer command (into to container)in order to install all dependencies of the project
+root#/var/www/app> composer install
+5 - You must wait until composer install all the dependencies after that you can open your browser an execute the next URL:
+http://localhost:8001/
+
+Enjoy it
+
+
+--------------------------------------------------------------------------------------------
 https://medium.com/@ger86/como-integrar-docker-en-un-proyecto-basado-en-symfony-846a4ee0f329
 
 
